@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>box</title>
+    <style>
+        .box {
+            width: auto;
+            height: 275px;
+            background-color: lightblue;
+            border: 2px solid black;
+            border-radius: 20px;
+            padding: 10px;
+            margin: 20px;
+            border:25px;
+            
+        }
+        form{
+            width:100%;
+            height:300px;
+            background-color:red;
+            align-content:center;
+        }
+        a{
+            border-radius: 20px;
+        }
+        img{
+            border-radius: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+
+        <a href="https://youtube.com/@darling_prabas_fanpage?si=8HWgAXA60-dvLNcY_"  target="blank">
+             <img src="{{ url_for('static', filename='a1.jpeg') }}" width="250px"  align ="right"></a>
+             
+        <a href="https://youtube.com/shorts/c1FdFNMpQgA?si=BavhfDWRuNim7CV_" target="blank">
+            <img src="{{ url_for('static', filename='a5.jpeg') }}" width="250px" height="250px" align="right"></a>
+        <a href="https://www.instagram.com/_d_star_nivas?rpxt=bDR4Nmo1Mjh0d2I1"target="blank">
+            <img src="{{ url_for('static', filename='a2.jpeg') }}" width="250px" height="250px" align="left">
+        </a>
+        <a href="https://www.instagram.com/reel/Dd8Y3xyBEya/?rpxt=bDkxaWNkYnJ4bWdi" target="blank">
+            <img src="{{ url_for('static', filename='a3.jpeg') }}" width="250px" height="250px" align="left">
+        </a>
+        <a href="https://www.instagram.com/actorprabhas?mdxt=aHdka2lxcG9xMm1r" target="blank">
+            <img src="{{ url_for('static', filename='a4.jpeg') }}" width="250px" height="250px" align="center">
+        </a>
+   </div>
+             <form align="center"  >
+        <input type="file" name="file" id="file" >
+        <input type="submit" value="uplode">
+    </form>        
+    
+            
+
+</body>
+
+</html>
